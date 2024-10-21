@@ -1,0 +1,118 @@
+.note-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.note-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.note-card-content {
+  margin-bottom: 20px;
+}
+
+.note-card-content .note-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.note-card-content .note-description {
+  font-size: 16px;
+  color: #333;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #5f6368;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+  font-size: 16px;
+  color: #333;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.note-card {
+  position: relative;
+  padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-actions .MuiIconButton-root {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.note-card:hover .MuiIconButton-root {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .note-card-container {
+    justify-content: center;
+  }
+
+  .note-card {
+    width: 90%;
+    margin: 10px 0;
+    padding: 16px;
+  }
+
+  .note-card-content .note-title {
+    font-size: 16px;
+  }
+
+  .note-card-content .note-description {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    font-size: 14px;
+  }
+}

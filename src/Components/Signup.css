@@ -1,0 +1,133 @@
+/* Signup.css */
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .signup-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 800px;
+    max-width: 90%;
+    padding: 30px;
+  }
+  
+  .signup-card h2 {
+    color: #f6a31d; /* Fundo logo color */
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  .create-text{
+    font-size: 20px;
+  }
+  /* .signup-card p {
+    color:black;
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+  } */
+  
+  .signup-card form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group-row-two {
+    display: flex;
+    gap: 20px;
+  }
+
+  .form-group-row-three {
+    display: flex;
+    gap: 300px;
+  }
+  
+  
+  
+ .hint {
+    font-size: 12px;
+    color:black;
+    margin-top: 5px;
+  }
+  
+  .signup-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-btn:hover {
+    background-color: #155bb5;
+  }
+  
+  .signin-link {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .signup-image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+  
+  .signup-image {
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .signup-image-text {
+    font-size: 20px;
+    color:black;
+    text-align: center;
+  }
+
+  #sign-in-page{
+    width: 100px;
+    color: #155bb5;
+  }
+
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .signup-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .signup-image-section {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
