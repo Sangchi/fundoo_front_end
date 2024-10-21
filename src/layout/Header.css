@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #c8c1c1;
+  position: relative;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.keep-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+}
+
+.center-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 70%;
+  height: 40px;
+}
+
+.search-icon {
+  color: #5f6368;
+  cursor: pointer;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: #5f6368;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.menu-item:hover {
+  background-color: #f1f3f4;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .search-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .left-section,
+  .right-section {
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .header-icon {
+    margin-left: 10px;
+  }
+
+  .profile-image {
+    width: 30px;
+    height: 30px;
+  }
+}
